@@ -1,95 +1,86 @@
-@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
-
 :root {
-    --yellow: hsl(47, 88%, 63%);
-    --white: hsl(0, 0%, 100%);
-    --grey: hsl(0, 0%, 50%);
-    --black: hsl(0, 0%, 7%);
+    --color-Yellow: hsl(47, 88%, 63%);
+    --color-White: hsl(0, 0%, 100%);
+    --color-Grey: hsl(0, 0%, 50%);
+    --color-Black: hsl(0, 0%, 7%);
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Figtree', sans-serif;
-}
+
+
 
 body {
-    background-color: var(--yellow);
-}
-
-#container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 13px;
-    box-shadow: 12px 12px 10px black;
-    width: 20%;
-    margin: auto;
-    margin-top: 3rem;
-    background-color: white;
-    border-radius: 20px;
-}
-
-#learning {
-    background-color: var(--yellow);
-    margin: 10px 0;
-    display: block;
-    padding: 0 30px;
-    border-radius: 8px;
-    width: 100px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#learning p {
-    display: block;
-}
-
-#photo img {
-    border-radius: 20px;
-    width: 100%;
-}
-
-h3{
-    color: var(--yellow);
-    margin: 10px 0;
-}
-
-p{
+    font-family: "Figtree", sans-serif;
+    background-color: var(--color-Yellow);
+    display: grid;
     font-size: 16px;
+    min-height: 100vh;
+    place-items: center;
+    margin: unset;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+    box-shadow: 10px 10px .5 black;
 }
 
-#profile-pic{
+.banner {
+    height: auto;
+    width: 100%;
+    border-radius: 12px;
+
+}
+
+main {
+    background-color: var(--color-White);
+    padding: 17px;
+    max-width: 300px;
+    border-radius: 12px;
+    border-color: var(--color-Black);
+    border-style: solid;
+    border-width: 1.8px;
+    box-shadow: 10px 10px 0px hsl(0, 0%, 7%);
+}
+
+div {
     display: flex;
-    align-items: center;
+    vertical-align: middle;
 }
 
-#profile-pic img{
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
+.avatar {
+    width: 30px;
+    height: 30px;
     margin-right: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
-@media screen and (max-width: 740px) {
-    #container {
-        width: 40%;
-    }
+.name {
+    font-size: 11px;
+    font-weight: 800;
 }
 
-@media screen and (max-width: 375px) {
-    #container {
-        width: 90%;
-    }
+.learn {
+    background-color: var(--color-Yellow);
+    display: inline-block;
+    padding: 1.2% 3%;
+    font-weight: 800;
+    font-size: 11px;
+    border-radius: 2px;
+    margin-bottom: 0;
+    margin-top: 16px;
 }
 
-@media screen and (max-width: 200px) {
-    #container {
-        #profile-pic{
-            flex-direction: column;
-        }
-    }
+.date {
+    font-size: 13px;
+    font-weight: 500px;
+    margin-top: 13px;
+    margin-bottom: 16px;
+}
+
+.title {
+    margin-top: 0;
+    font-size: 21px;
+}
+
+.details {
+    font-size: 16px;
+    opacity: .8;
 }
