@@ -44,6 +44,16 @@ div {
     vertical-align: middle;
 }
 
+.title {
+    margin-top: 0;
+    font-size: 21px;
+}
+
+.title:hover{
+    color: var(--color-Yellow);
+    cursor: pointer;
+}
+
 .avatar {
     width: 30px;
     height: 30px;
@@ -75,10 +85,6 @@ div {
     margin-bottom: 16px;
 }
 
-.title {
-    margin-top: 0;
-    font-size: 21px;
-}
 
 .details {
     font-size: 16px;
